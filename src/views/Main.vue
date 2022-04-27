@@ -12,7 +12,7 @@
         <div class="main__download download">
           <div class="download__body">
             <div class="download__text">{{ store.mainData.text }}</div>
-            <div class="download__button" @click="store.showModal = true">{{ store.mainData.button }}</div>
+            <div class="download__button" @click="store.showModal = true" >{{ store.mainData.button }}</div>
           </div>
         </div>
       </div>
