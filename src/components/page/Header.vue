@@ -7,8 +7,8 @@
         </div>
         <div class="header__contacts">
           <a class="header__phone" :href="`tel:${ phone }`" :class="!showContacts ? 'header__phone_shown' : ''">{{ phone }}</a>
-          <a class="header__link"  @click="store.showModal = true"  :class="!showContacts ? 'header__link_shown' : ''">Заказать звонок</a>
-          <div @click="store.showModal = true"  class="header__icon"><img src="@/assets/img/icons/phone.svg" alt="" @click="showContacts = !showContacts"></div>
+          <a class="header__link"  :href="`tel:${ phone }`"   :class="!showContacts ? 'header__link_shown' : ''">Заказать звонок</a>
+          <a  :href="`tel:${ phone }`" class="header__icon"><img src="@/assets/img/icons/phone.svg" alt="" @click="showContacts = !showContacts"></a>
         </div>
       </div>
     </div>
@@ -20,7 +20,7 @@ import { ref } from 'vue';
 import { useStore } from '@/store/index.js';
 
 const store = useStore();
-const phone = ref('+7 (987) 654-32-10');
+const phone = ref('+7 (812) 445-68-22');
 const showContacts = ref(false);
 </script>
 
